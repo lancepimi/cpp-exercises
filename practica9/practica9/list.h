@@ -1,0 +1,39 @@
+#pragma once
+
+//Clase: Creación de una lista enlazada TList que tenga los siguientes metodos: 
+//	   a. int Size(); // Retorna el número de elementos.
+//	   b. int Push(const char *psz); // Añade la cadena a la lista.
+//	   c. const char * First(); // retorna el primer elemento de la lista.
+//	   d. const char *Next(); // retorna el siguiente elemento de la lista.
+//	   e. const char * Pop(); // Elimina y retorna el primer elemento de la lista.
+//	   f. void Reset(); // Elimina todos los elementos de la lista.
+
+
+class TListNode
+{
+public:
+	TListNode(const char* _sValue);
+
+	const char * m_sValue;
+	TListNode *m_pNext;
+};
+
+class TList
+{
+public:
+	TList();
+	~TList();
+
+	int Size();
+	void Push(const char *_sValue);
+	const char* First();
+	const char* Next();
+	const char* Pop();
+	void Reset();
+	
+
+private:
+	TListNode *m_pFirst;
+	TListNode *m_pCurrent;
+	unsigned int m_uSize;
+};

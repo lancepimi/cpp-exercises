@@ -1,0 +1,1 @@
+Texto para copiar en el archivo test_write.txt

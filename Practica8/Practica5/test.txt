@@ -1,0 +1,1 @@
+Texto para buscar coincidencias del archivo con la cadena char definida en el programa
